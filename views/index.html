@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <h1>home</h1>
 
-    <a href="./posts/10">go to posts/10</a>
+<body class="p-0 m-0">
+    <div id="background" class="h-screen  overflow-hidden fixed z-[-10] ">
+        <div class="fixed w-full h-screen lg:opacity-90   sm:opacity-100  bg-[#010005]  " id="mask"></div>
+        <img class=" " src="./css/background.jpg" alt="">
+    </div>
+    <!-- nav -->
+    <section class="fixed z-10 w-full ">
+        <div id="nav" class="flex px-2 py-3 
+         justify-items-center">
+            <a href="./index.html" class="self-start">
+                <div class="flex ">
+                    <i class="material-icons text-yellow-400  mt-3 mr-2 scale-[1.2]  ">electric_car </i>
+                    <p class="text-3xl  text-white">
+                        <span class="font-light ">Slim </span>
+                        <span class="font-bold font-sans">car</span>
+                    </p>
+                </div>
+            </a>
+            <input id="search" type="text" spellcheck="false" placeholder="search for cars . . ."
+            class="
+            bg-amber-50 border-0 lg:text-center rounded-md sm:px-4 sm:pl-2 py-2 outline-0 
+            ml-[5%] w-[40%] shadow-sm focus-within:shadow-yellow-300 focus-within:rounded-3xl peer-[]: ">
+            <i class="material-icons p-3 ml-[-45px] mr-2  peer-focus-within:text-black">search</i>
+            
+            <a href="/login" class="">
+                <button title="login to be able to book cars"
+                class="p-2 button-transition hover:bg-transparent h-full hover:outline-yellow-300 bg-yellow-300
+                ml-[100px ]  px-10 rounded-lg outline-2 outline-black font-medium text-lg text-black hover:text-yellow-300
+                hover:rounded-3xl" 
+                >login
+                </button>
+            </a>
+        </div>
+    </section>
+<!-- login form -->
+    <section>
+        <form action="">
+            <label for=""></label>
+        </form>
+    </section>
+    
 </body>
+
 </html>
