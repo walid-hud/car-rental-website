@@ -1,21 +1,19 @@
 {
   "name": "car_rental",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "type": "commonjs",
   "scripts": {
     "start": "node main.js",
     "dev": "node --watch main.js "
   },
   "keywords": [],
-  "author": "",
+  "author": "walid oumolilte",
   "license": "ISC",
-  "description": "",
+  "description": "car rental agency app with built in admin panel",
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongodb": "^6.12.0",
-    "tailwindcss": "^4.0.1"
+    "mongodb": "^6.12.0"
   }
 }

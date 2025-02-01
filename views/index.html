@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-    <link rel="stylesheet" href="./css/output.css" />
+    <!-- <link rel="stylesheet" href="./output.css" /> -->
+     <link rel="stylesheet" href="../public/output.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body class="p-0 m-0">
     <div id="background" class="h-screen  overflow-hidden fixed z-[-10] ">
         <div class="fixed w-full h-screen lg:opacity-90   sm:opacity-100  bg-[#010005]  " id="mask"></div>
-        <img class=" " src="./css/background.jpg" alt="">
+        <!-- <img class=" " src="./background.jpg" alt=""> -->
+         <img src="../public/background.jpg" alt="">
     </div>
     <!-- nav -->
-    <section class="fixed z-10 w-full ">
-        <div id="nav" class="flex px-2 py-3 
-         justify-items-center">
-            <a href="./index.html" class="self-start">
+    <section class="fixed z-10 w-full  ">
+        <div id="nav" class="flex px-2 py-3 w-full
+         justify-items-center justify-baseline">
+            <a href="./" class="self-start">
                 <div class="flex ">
                     <i class="material-icons text-yellow-400  mt-3 mr-2 scale-[1.2]  ">electric_car </i>
                     <p class="text-3xl  text-white">
@@ -30,15 +32,32 @@
             <input id="search" type="text" spellcheck="false" placeholder="search for cars . . ."
             class="
             bg-amber-50 border-0 lg:text-center rounded-md sm:px-4 sm:pl-2 py-2 outline-0 
-            ml-[5%] w-[40%] shadow-sm focus-within:shadow-yellow-300 focus-within:rounded-3xl peer-[]: ">
-            <i class="material-icons p-3 ml-[-45px] mr-2  peer-focus-within:text-black">search</i>
+            ml-[5%] w-[40%] shadow-sm h-10 focus-within:shadow-yellow-300 focus-within:rounded-3xl peer-[]: ">
+            <i title="search for cars" class="material-icons p-2 ml-[-45px] mr-4  peer-focus-within:text-black">search</i>
             
-            <a href="/login" class="">
+            <!--contact us  -->
+            <button title="login to be able to book cars"
+                class=" button-transition text-nowrap hover:bg-transparent h-10 hover:outline-yellow-300 bg-yellow-300
+                ml-[100px ]  px-8 rounded-lg outline outline-black font-medium text-lg text-black hover:text-yellow-300
+                hover:rounded-3xl " 
+                >contact us
+                </button>
+            <!-- login -->
+            <a href="/login" class="ml-auto">
                 <button title="login to be able to book cars"
-                class="p-2 button-transition hover:bg-transparent h-full hover:outline-yellow-300 bg-yellow-300
-                ml-[100px ]  px-10 rounded-lg outline-2 outline-black font-medium text-lg text-black hover:text-yellow-300
-                hover:rounded-3xl" 
-                >login
+                class="flex pt-2 button-transition hover:bg-transparent h-10 hover:outline-yellow-300 bg-yellow-300
+                px-8 rounded-lg outline text-nowrap outline-black font-medium text-lg text-black hover:text-yellow-300
+                hover:rounded-3xl " 
+                >login <div><i class="material-icons button-transition scale-[1] mt-1 hover:text-yellow-300 ">login</i></div>
+                </button>
+            </a>
+            <!-- sign_up -->
+            <a href="/login" class="">
+                <button role="link"
+                class=" button-transition bg-transparent h-10 
+                ml-[100px ] px-6  hover:text-yellow-100  font-medium text-lg text-yellow-300
+                 mx-2" 
+                >sign up
                 </button>
             </a>
         </div>
